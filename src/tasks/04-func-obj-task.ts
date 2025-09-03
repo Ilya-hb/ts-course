@@ -51,5 +51,4 @@ function login(user: { login: string; password: string }): void {
 login({ login: "bebra", password: "sdf" });
 login(user1);
 login(admin1);
-
 login({ login: "bebra", password: "" });
