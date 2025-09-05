@@ -41,4 +41,4 @@ const obj2: ModelData<Array<number>> = {
 obj2.title = "asd";
 obj2.value = [123123];
 
-const head1 = <T>(value: T[]): T => value[0];
+const head1 = <T>(value: T[]): T => value[0]!;
