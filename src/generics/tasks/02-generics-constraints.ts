@@ -1,4 +1,4 @@
-function keys<T>(obj: object): Array<keyof T> {
+function keys<T extends object>(obj: T): Array<keyof T> {
   const currentKeys = [];
 
   for (let key in obj) {
@@ -8,7 +8,7 @@ function keys<T>(obj: object): Array<keyof T> {
   return currentKeys;
 }
 
-function values(obj) {
+function values<T extends object>(obj: T): Array<T[keyof T]> {
   const currentValues = [];
 
   for (let key in obj) {
