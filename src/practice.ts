@@ -1,52 +1,31 @@
-// Допиши типы для функции below!
-function returnWhatIPass<T>(arg: T): T {
-  return arg;
+// Опиши интерфейс User ниже
+interface User {
+  id: number;
+  name: string;
+  isAdmin: boolean;
 }
 
-// Проверка (раскомментируй и проверь, правильно ли определяются типы)
-const result1 = returnWhatIPass("Hello"); // Ожидаемый тип: string
-const result2 = returnWhatIPass(123); // Ожидаемый тип: number
-const result3 = returnWhatIPass(true); // Ожидаемый тип: boolean
-
-// Допиши типы для функции below!
-function getFirstElement<T>(arr: T[]): T | undefined {
-  return arr[0];
+function getUserName(user: User): string {
+  return user.name;
 }
 
-// Проверка
-const firstNum = getFirstElement([1, 2, 3]); // Ожидаемый тип: number
-const firstStr = getFirstElement(["a", "b", "c"]); // Ожидаемый тип: string
-const firstBool = getFirstElement([true, false]); // Ожидаемый тип: boolean
-const und = getFirstElement([]); // undefined
-
-// Допиши типы для функции below!
-function makePair<T, U>(first: T, second: U): [T, U] {
-  return [first, second];
-}
-
-// Проверка
-const numberAndString = makePair(10, "ten"); // Ожидаемый тип: [number, string]
-const boolAndNumber = makePair(true, 100); // Ожидаемый тип: [boolean, number]
-const twoStrings = makePair("left", "right"); // Ожидаемый тип: [string, string]
-
-// Допиши типы для функции below!
-function mergeObjects<T extends object, U extends object>(obj1: T, obj2: U) {
+function merge<T extends object, U extends object>(obj1: T, obj2: U): T & U {
   return { ...obj1, ...obj2 };
 }
+merge({ name: "ilya" }, { surname: "holuban" });
 
-// Проверка
-const merged = mergeObjects({ name: "Alice" }, { age: 30 });
-// Ожидаемый тип: { name: string; age: number; }
+type TUser = { id: number; name: string };
+type Nullable<T> = {
+  [P in keyof T]?: T[P] | null;
+};
+type NullableUser = Nullable<TUser>;
 
-const anotherMerge = mergeObjects({ flag: true }, { values: [1, 2, 3] });
-// Ожидаемый тип: { flag: boolean; values: number[]; }
-
-// Допиши типы для функции below!
-function wrapInArray<T>(value: T): [T] {
-  return [value];
+// 4. не особо шарю как работает эта функция но вот я попытался сделать такое
+function myPick<T, K>(arg1: T, arg2: K) {
+  return [arg1, arg2];
 }
 
-// Проверка
-const numArray = wrapInArray(5); // Ожидаемый тип: number[]
-const strArray = wrapInArray("test"); // Ожидаемый тип: string[]
-const objArray = wrapInArray({ id: 1 }); // Ожидаемый тип: { id: number; }[]
+function identity<T>(val: T): T {
+  return val;
+}
+identity("asd");
