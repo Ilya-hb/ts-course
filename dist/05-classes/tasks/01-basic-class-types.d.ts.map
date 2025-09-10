@@ -1,0 +1,1 @@
+{"version":3,"file":"01-basic-class-types.d.ts","sourceRoot":"","sources":["../../../src/05-classes/tasks/01-basic-class-types.ts"],"names":[],"mappings":"AAAA,qBAAa,SAAS;IACD,KAAK,EAAE,MAAM;IAAS,MAAM,EAAE,MAAM;gBAApC,KAAK,EAAE,MAAM,EAAS,MAAM,EAAE,MAAM;IAIvD,IAAI,IAAI,MAAM;IAId,SAAS,CAAC,GAAG,IAAI,IAAI;CAGtB"}
