@@ -1,0 +1,1 @@
+{"version":3,"file":"02-temperature.d.ts","sourceRoot":"","sources":["../../../src/05-classes/tasks/02-temperature.ts"],"names":[],"mappings":"AAAA,qBAAa,WAAW;IACH,OAAO,EAAE,MAAM;gBAAf,OAAO,EAAE,MAAM;IAElC,IAAI,UAAU,IAAI,MAAM,CAEvB;IAED,IAAI,UAAU,CAAC,KAAK,EAAE,MAAM,EAE3B;IAED,MAAM,CAAC,cAAc,CAAC,KAAK,EAAE,MAAM;CAGpC"}

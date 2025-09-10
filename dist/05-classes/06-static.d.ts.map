@@ -1,0 +1,1 @@
+{"version":3,"file":"06-static.d.ts","sourceRoot":"","sources":["../../src/05-classes/06-static.ts"],"names":[],"mappings":"AAAA,qBAAa,MAAM;IAME,MAAM,EAAE,MAAM;IALjC,SAAS,CAAC,MAAM,CAAC,EAAE,EAAE,MAAM,CAAW;IAEtC,OAAO,CAAC,MAAM,CAAC,aAAa;gBAGT,MAAM,EAAE,MAAM;IACjC,IAAI,IAAI,WAEP;CACF"}

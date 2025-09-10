@@ -1,0 +1,1 @@
+{"version":3,"file":"04-abstract-class.d.ts","sourceRoot":"","sources":["../../src/05-classes/04-abstract-class.ts"],"names":[],"mappings":"AAAA,uBAAe,MAAM;IACnB,QAAQ,CAAC,KAAK,EAAE,MAAM,CAAC;IACvB,QAAQ,CAAC,KAAK,CAAC,KAAK,EAAE,MAAM,GAAG,IAAI;IAC5B,IAAI;CAGZ;AAED,qBAAa,GAAI,SAAQ,MAAM;IACV,KAAK,EAAE,MAAM;gBAAb,KAAK,EAAE,MAAM;IAGhC,KAAK,CAAC,KAAK,EAAE,MAAM;CAGpB"}

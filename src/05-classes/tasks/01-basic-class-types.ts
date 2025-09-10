@@ -7,7 +7,7 @@ export class Rectangle {
     return this.height * this.width;
   }
 
-  protected log(): void {
+  private log(): void {
     console.log(`new Rectangle was create at ${new Date()}`);
   }
 }
